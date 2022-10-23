@@ -4,16 +4,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css"/>-->
   <link rel="stylesheet" href="css/output.css">
-  <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
   <script defer src="js/color-theme.js"></script>
+  <script src="js/nav.js"></script>
   <title>Светлогорск</title>
 </head>
 <body class="antialiased bg-gray-100 dark:bg-slate-800">
 <header class="header">
   <div class="flex justify-between items-center flex-wrap mx-auto max-w-screen-xl">
-    <a href="index.html" class="flex items-center ml">
+    <a href="/svetlogorsk/" class="flex items-center ml">
       <img src="img/logo.png" class="mr-3 h-6 sm:h-9" alt="ChessCake Logo">
       <h1 class="self-center text-gray-700 dark:text-gray-200 text-sm font-semibold text-sm sm:text-base md:text-xl link">
         Светлогорск
@@ -66,14 +65,22 @@
 </header>
 <div class="flex flex-col md:flex-row items-start mx-auto max-w-screen-xl gap px">
   <main class="w-full component-block">
-    <h2 class="text-gray-900 text-base font-semibold md:text-lg dark:text-gray-200 mb">Информация</h2>
+    <h2 data-section="information"
+        class="-mt-14 pt-16 text-gray-900 text-base font-semibold md:text-lg dark:text-gray-200 mb section"
+        id="information">
+      Информация
+    </h2>
     <p>Светлогорск — город в Гомельской области. Это один из самых молодых городов Беларуси. Административный
       центр Светлогорского района.</p>
     <figure class="max-w-lg mx-auto my">
       <img class="max-w-full mx-auto mx-auto h-auto rounded-lg" src="img/square.jpg" alt="Центральная площадь">
       <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Центральная площадь</figcaption>
     </figure>
-    <h2 class="text-gray-900 text-base font-semibold md:text-lg dark:text-gray-200 my">Население</h2>
+    <h2 data-section="population"
+        class="-mt-14 pt-16 text-gray-900 text-base font-semibold md:text-lg dark:text-gray-200 my section"
+        id="population">
+      Население
+    </h2>
     <p class="mb">Население — 64 989 человек.</p>
     <ol class="list-decimal list-inside">
       <li>Белорусы 87,55%</li>
@@ -81,7 +88,11 @@
       <li>Украинцы 1,85%</li>
       <li>Другие 1,03%</li>
     </ol>
-    <h2 class="text-gray-900 text-base font-semibold md:text-lg dark:text-gray-200 my">География</h2>
+    <h2 data-section="geography"
+        class="-mt-14 pt-16 text-gray-900 text-base font-semibold md:text-lg dark:text-gray-200 my section"
+        id="geography">
+      География
+    </h2>
     <p>Город расположен в Гомельском Полесье, пристань на реке Березина.</p>
     <figure class="max-w-lg mx-auto my">
       <img class="max-w-full mx-auto h-auto rounded-lg" src="img/map.png" alt="Центральная площадь">
@@ -100,7 +111,11 @@
     </ul>
     <p class="mt">Остальные места, вдоль железной дороги, а также прилегающие к пос. Нефтяников — не имеют вполне
       сложившихся наименований, хотя в отношении последних иногда употребляется название «Старый аэродром».</p>
-    <h2 class="text-gray-900 text-base font-semibold md:text-lg dark:text-gray-200 my">Образование</h2>
+    <h2 data-section="education"
+        class="-mt-14 pt-16 text-gray-900 text-base font-semibold md:text-lg dark:text-gray-200 my section"
+        id="education">
+      Образование
+    </h2>
     <ul class="space-y-1 list-disc list-inside">
       <li>В городе работают 12 общеобразовательных школ, в том числе гимназия; межшкольный учебно-производственный
         комбинат; 1 профессионально-техническое учреждение.
@@ -111,7 +126,11 @@
       <li>Есть дом детского и юношеского творчества, детская художественная школа и детская школа искусств.</li>
       <li>Имеются спортивный комплекс, плавательный бассейн, 3 стадиона, теннисный корт.</li>
     </ul>
-    <h2 class="text-gray-900 text-base font-semibold md:text-lg dark:text-gray-200 my">Крупнейшие предприятия</h2>
+    <h2 data-section="factories"
+        class="-mt-14 pt-16 text-gray-900 text-base font-semibold md:text-lg dark:text-gray-200 my section"
+        id="factories">
+      Крупнейшие предприятия
+    </h2>
     <ul class="space-y-1 list-disc list-inside">
       <li>ОАО «СветлогорскХимволокно»;</li>
       <li>Светлогорский целлюлозно-картонный комбинат;</li>
@@ -123,17 +142,27 @@
       <li>Светлогорский машиностроительный завод расположен в посёлке Сосновый Бор в 15 км южнее Светлогорска.</li>
     </ul>
   </main>
-  <aside class="sidebar component-block">
-    <h3 class="mb text-sm font-semibold tracking-wide text-gray-900 uppercase dark:text-white lg:text-xs">
+  <aside class="sidebar component-block sticky top-[4.5rem]">
+    <h3 class="text-sm font-semibold tracking-wide text-gray-900 uppercase dark:text-white lg:text-xs">
       На этой странице
     </h3>
-    <nav>
+    <nav class="sidebar-nav">
       <ul>
-        <li>Информация</li>
-        <li>Население</li>
-        <li>География</li>
-        <li>Образование</li>
-        <li>Предприятия</li>
+        <li data-section="information" class="sidebar-nav__li sidebar-nav__active">
+          <a href="#information">Информация</a>
+        </li>
+        <li data-section="population" class="sidebar-nav__li">
+          <a href="#population">Население</a>
+        </li>
+        <li data-section="geography" class="sidebar-nav__li">
+          <a href="#geography">География</a>
+        </li>
+        <li data-section="education" class="sidebar-nav__li">
+          <a href="#education">Образование</a>
+        </li>
+        <li data-section="factories" class="sidebar-nav__li">
+          <a href="#factories">Предприятия</a>
+        </li>
       </ul>
     </nav>
   </aside>

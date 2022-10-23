@@ -662,6 +662,33 @@ aside.sidebar {
   }
 }
 
+aside.sidebar>nav>ul>li {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+aside.sidebar>nav>ul>li>a {
+  border-left-width: 4px;
+  border-color: transparent;
+  padding-left: 1rem;
+}
+
+aside.sidebar>nav>ul>li>a:hover {
+  border-color: inherit;
+  --tw-text-opacity: 1;
+  color: rgb(244 63 94 / var(--tw-text-opacity));
+}
+
+aside.sidebar>nav>ul>li.sidebar-nav__active>a {
+  border-left-width: 4px;
+  --tw-border-opacity: 1;
+  border-color: rgb(190 18 60 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(190 18 60 / var(--tw-text-opacity));
+  transition-property: none;
+  transition-duration: 200ms;
+}
+
 /*Кнопка с фоном*/
 
 /*Кнопка без фона*/
@@ -900,6 +927,14 @@ aside.sidebar {
   }
 }
 
+.sticky {
+  position: sticky;
+}
+
+.top-\[4\.5rem\] {
+  top: 4.5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -925,8 +960,16 @@ aside.sidebar {
   margin-left: 0.5rem;
 }
 
-.mb-2 {
-  margin-bottom: 0.5rem;
+.mt-\[-50px\] {
+  margin-top: -50px;
+}
+
+.-mt-16 {
+  margin-top: -4rem;
+}
+
+.-mt-14 {
+  margin-top: -3.5rem;
 }
 
 .block {
@@ -965,10 +1008,6 @@ aside.sidebar {
   width: 1.25rem;
 }
 
-.w-2\/3 {
-  width: 66.666667%;
-}
-
 .w-96 {
   width: 24rem;
 }
@@ -987,10 +1026,6 @@ aside.sidebar {
 
 .max-w-full {
   max-width: 100%;
-}
-
-.max-w-md {
-  max-width: 28rem;
 }
 
 .list-inside {
@@ -1111,6 +1146,10 @@ aside.sidebar {
 
 .pl-3 {
   padding-left: 0.75rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
 }
 
 .text-center {
