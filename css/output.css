@@ -557,6 +557,25 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+p, ul, ol {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
+.dark p,.dark  ul,.dark  ol {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  p, ul, ol {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
 /*Шапка*/
 
 header.header {
@@ -644,19 +663,14 @@ aside.sidebar {
 }
 
 aside.sidebar {
-  display: grid;
+  display: none;
   width: 100%;
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-@media (min-width: 640px) {
-  aside.sidebar {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
 @media (min-width: 768px) {
   aside.sidebar {
+    display: grid;
     flex: 0 0 18.75rem;
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -674,9 +688,17 @@ aside.sidebar>nav>ul>li>a {
 }
 
 aside.sidebar>nav>ul>li>a:hover {
-  border-color: inherit;
+  --tw-border-opacity: 1;
+  border-color: rgb(244 63 94 / var(--tw-border-opacity));
   --tw-text-opacity: 1;
   color: rgb(244 63 94 / var(--tw-text-opacity));
+}
+
+.dark aside.sidebar>nav>ul>li>a:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(190 18 60 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(190 18 60 / var(--tw-text-opacity));
 }
 
 aside.sidebar>nav>ul>li.sidebar-nav__active>a {
@@ -687,6 +709,13 @@ aside.sidebar>nav>ul>li.sidebar-nav__active>a {
   color: rgb(190 18 60 / var(--tw-text-opacity));
   transition-property: none;
   transition-duration: 200ms;
+}
+
+.dark aside.sidebar>nav>ul>li.sidebar-nav__active>a {
+  --tw-border-opacity: 1;
+  border-color: rgb(244 63 94 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(244 63 94 / var(--tw-text-opacity));
 }
 
 /*Кнопка с фоном*/
@@ -719,10 +748,6 @@ aside.sidebar>nav>ul>li.sidebar-nav__active>a {
   --tw-text-opacity: 1;
   color: rgb(251 113 133 / var(--tw-text-opacity));
 }
-
-/*Блочная ссылка*/
-
-/*Табы*/
 
 /*Компонент-блок*/
 
@@ -759,9 +784,26 @@ aside.sidebar>nav>ul>li.sidebar-nav__active>a {
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
-/*Список новостей*/
+.component-block__title {
+  padding-top: 4rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
 
-/*Матчи на главной странице*/
+.dark .component-block__title {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .component-block__title {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
 
 /*Отступы*/
 
@@ -948,6 +990,10 @@ aside.sidebar>nav>ul>li.sidebar-nav__active>a {
   margin-top: 1rem;
 }
 
+.-mt-14 {
+  margin-top: -3.5rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -958,18 +1004,6 @@ aside.sidebar>nav>ul>li.sidebar-nav__active>a {
 
 .ml-2 {
   margin-left: 0.5rem;
-}
-
-.mt-\[-50px\] {
-  margin-top: -50px;
-}
-
-.-mt-16 {
-  margin-top: -4rem;
-}
-
-.-mt-14 {
-  margin-top: -3.5rem;
 }
 
 .block {
@@ -1148,10 +1182,6 @@ aside.sidebar>nav>ul>li.sidebar-nav__active>a {
   padding-left: 0.75rem;
 }
 
-.pt-16 {
-  padding-top: 4rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -1164,11 +1194,6 @@ aside.sidebar>nav>ul>li.sidebar-nav__active>a {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 
 .font-semibold {
@@ -1202,14 +1227,14 @@ aside.sidebar>nav>ul>li.sidebar-nav__active>a {
   color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
-.text-gray-900 {
-  --tw-text-opacity: 1;
-  color: rgb(17 24 39 / var(--tw-text-opacity));
-}
-
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.text-gray-900 {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
 .text-blue-600 {
@@ -1263,8 +1288,18 @@ aside.sidebar>nav>ul>li.sidebar-nav__active>a {
 }
 
 @media (min-width: 640px) {
+  .sm\:flex {
+    display: flex;
+  }
+
   .sm\:h-9 {
     height: 2.25rem;
+  }
+
+  .sm\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2rem * var(--tw-space-x-reverse));
+    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .sm\:text-base {
@@ -1322,9 +1357,9 @@ aside.sidebar>nav>ul>li.sidebar-nav__active>a {
     line-height: 1.75rem;
   }
 
-  .md\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .md\:hover\:bg-transparent:hover {

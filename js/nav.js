@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function () {
             if (window.pageYOffset >= section.offsetTop) {
                 links.forEach(link => {
                     link.classList.remove('sidebar-nav__active');
-                    console.log(link);
                     if (link.dataset.section === section.dataset.section) {
                         link.classList.add('sidebar-nav__active')
                     }

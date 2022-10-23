@@ -13,13 +13,13 @@
 <header class="header">
   <div class="flex justify-between items-center flex-wrap mx-auto max-w-screen-xl">
     <a href="/svetlogorsk/" class="flex items-center ml">
-      <img src="img/logo.png" class="mr-3 h-6 sm:h-9" alt="ChessCake Logo">
+      <img src="img/logo.webp" class="mr-3 h-6 sm:h-9" alt="ChessCake Logo">
       <h1 class="self-center text-gray-700 dark:text-gray-200 text-sm font-semibold text-sm sm:text-base md:text-xl link">
         Светлогорск
       </h1>
     </a>
-    <nav class="hidden md:flex">
-      <ul class="flex flex-row font-medium md:space-x-8">
+    <nav class="hidden sm:flex">
+      <ul class="flex flex-row font-medium sm:space-x-8 text-sm md:text-base">
         <li>
           <!--          aria-current="page" - текущая активная страница-->
           <a href="monument.html" class="link" aria-current="page">Достопримечательности</a>
@@ -66,18 +66,18 @@
 <div class="flex flex-col md:flex-row items-start mx-auto max-w-screen-xl gap px">
   <main class="w-full component-block">
     <h2 data-section="information"
-        class="-mt-14 pt-16 text-gray-900 text-base font-semibold md:text-lg dark:text-gray-200 mb section"
+        class="-mt-14 component-block__title mb section"
         id="information">
       Информация
     </h2>
     <p>Светлогорск — город в Гомельской области. Это один из самых молодых городов Беларуси. Административный
       центр Светлогорского района.</p>
     <figure class="max-w-lg mx-auto my">
-      <img class="max-w-full mx-auto mx-auto h-auto rounded-lg" src="img/square.jpg" alt="Центральная площадь">
+      <img class="max-w-full mx-auto mx-auto h-auto rounded-lg" src="img/square.webp" alt="Центральная площадь">
       <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Центральная площадь</figcaption>
     </figure>
     <h2 data-section="population"
-        class="-mt-14 pt-16 text-gray-900 text-base font-semibold md:text-lg dark:text-gray-200 my section"
+        class="-mt-14 component-block__title mb section"
         id="population">
       Население
     </h2>
@@ -89,13 +89,13 @@
       <li>Другие 1,03%</li>
     </ol>
     <h2 data-section="geography"
-        class="-mt-14 pt-16 text-gray-900 text-base font-semibold md:text-lg dark:text-gray-200 my section"
+        class="-mt-14 component-block__title mb section"
         id="geography">
       География
     </h2>
     <p>Город расположен в Гомельском Полесье, пристань на реке Березина.</p>
     <figure class="max-w-lg mx-auto my">
-      <img class="max-w-full mx-auto h-auto rounded-lg" src="img/map.png" alt="Центральная площадь">
+      <img class="max-w-full mx-auto h-auto rounded-lg" src="img/map.webp" alt="Светлогорск на карте">
       <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Светлогорск на карте Республики
         Беларусь
       </figcaption>
@@ -112,7 +112,7 @@
     <p class="mt">Остальные места, вдоль железной дороги, а также прилегающие к пос. Нефтяников — не имеют вполне
       сложившихся наименований, хотя в отношении последних иногда употребляется название «Старый аэродром».</p>
     <h2 data-section="education"
-        class="-mt-14 pt-16 text-gray-900 text-base font-semibold md:text-lg dark:text-gray-200 my section"
+        class="-mt-14 component-block__title mb section"
         id="education">
       Образование
     </h2>
@@ -126,8 +126,12 @@
       <li>Есть дом детского и юношеского творчества, детская художественная школа и детская школа искусств.</li>
       <li>Имеются спортивный комплекс, плавательный бассейн, 3 стадиона, теннисный корт.</li>
     </ul>
+    <figure class="max-w-lg mx-auto my">
+      <img class="max-w-full mx-auto h-auto rounded-lg" src="img/school12.webp" alt="Средняя школа №12">
+      <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Средняя школа №12</figcaption>
+    </figure>
     <h2 data-section="factories"
-        class="-mt-14 pt-16 text-gray-900 text-base font-semibold md:text-lg dark:text-gray-200 my section"
+        class="-mt-14 component-block__title my section"
         id="factories">
       Крупнейшие предприятия
     </h2>
@@ -141,6 +145,19 @@
       <li>Завод сварочных электродов;</li>
       <li>Светлогорский машиностроительный завод расположен в посёлке Сосновый Бор в 15 км южнее Светлогорска.</li>
     </ul>
+    <figure class="max-w-lg mx-auto my">
+      <img class="max-w-full mx-auto h-auto rounded-lg" src="img/himvolokno.webp" alt="СветлогорскХимволокно">
+      <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">
+        ОАО "СветлогорскХимволокно"
+      </figcaption>
+    </figure>
+    <figure class="max-w-lg mx-auto my">
+      <img class="max-w-full mx-auto h-auto rounded-lg" src="img/himvolokno.webp"
+           alt="Светлогорский целлюлозно-картонный комбинат">
+      <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">
+        Светлогорский целлюлозно-картонный комбинат
+      </figcaption>
+    </figure>
   </main>
   <aside class="sidebar component-block sticky top-[4.5rem]">
     <h3 class="text-sm font-semibold tracking-wide text-gray-900 uppercase dark:text-white lg:text-xs">
