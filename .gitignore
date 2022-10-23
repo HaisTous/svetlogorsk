@@ -1,1 +1,5 @@
 .idea/
+node_modules/
+*.json
+tailwind.config.js
+css/input.css
