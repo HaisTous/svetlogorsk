@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/output.css">
+	<link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+	<script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+    <title>Тесты</title>
+</head>
+<body>
+	<nav class="bg-white border-gray-200 px-2 md:px-4 py-2.5 dark:bg-gray-900">
+		<div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+			<a href="main.html" class="flex items-center hover:text-red-800">
+				<img src="img/logo.png" class="mr-3 h-6 sm:h-9" alt="Логотип">
+				<span class="self-center text-xl font-semibold whitespace-nowrap">Светлогорск</span>
+			</a>
+			<div class="flex items-center md:order-2"></div>
+			<div id="mega-menu" class="hidden justify-between items-center w-full text-sm md:flex md:w-auto md:order-1">
+				<ul class="flex flex-col mt-4 font-medium md:flex-row md:space-x-8 md:mt-0">
+					<li>
+						<a href="monument.html" class="block py-2 pr-4 pl-3 text-gray-800 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 hover:text-red-800 md:p-0">Достопримечательности</a>
+					</li>
+					<li>
+						<a href="history.html" class="block py-2 pr-4 pl-3 text-gray-800 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 hover:text-red-800 md:p-0">История</a>
+					</li>
+					<li>
+						<a href="test.html" class="block py-2 pr-4 pl-3 text-red-800 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 hover:text-red-800 md:p-0">Тесты</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+    <div class="content mx-auto max-w-screen-xl">
+        <form>
+            <div class="question">
+                <h3 class="mb-4 font-semibold text-gray-900">1. Сколько человек проживает в Светлогорске ?</h3>
+                <ul class="w-96 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200">
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q1-1" type="radio" value="" name="q1" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q1-1" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Менее 40000  людей</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q1-2" type="radio" value="" name="q1" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q1-2" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Около 65000 человек</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q1-3" type="radio" value="" name="q1" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q1-3" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Более 100000 людей</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q1-4" type="radio" value="" name="q1" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q1-4" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Около 75000 человек</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3 class="mb-4 font-semibold text-gray-900">2. Где расположен г. Светлогорск ?</h3>
+                <ul class="w-96 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200">
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q2-1" type="radio" value="" name="q2" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q2-1" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Город расположен в Гродненской области, пристань на реке Днепр</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q2-2" type="radio" value="" name="q2" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q2-2" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Город расположен в Гомельском Полесье, пристань на реке Березина</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q2-3" type="radio" value="" name="q2" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q2-3" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Город расположен в Минской области, пристань на реке Березина</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3 class="mb-4 font-semibold text-gray-900">3. Жилая планировка города состоит из следующих частей:</h3>
+                <ul class="w-96 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200">
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q3-1" type="checkbox" value="" name="q3" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q3-1" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Шатилки — вдоль р. Березина</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q3-2" type="checkbox" value="" name="q3" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q3-2" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Новый город</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q3-3" type="checkbox" value="" name="q3" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q3-3" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Старый город</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q3-4" type="checkbox" value="" name="q3" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q3-4" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Посёлок Строителей</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q3-5" type="checkbox" value="" name="q3" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q3-5" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Округ Энергетиков</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q3-6" type="checkbox" value="" name="q3" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q3-6" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">8 микрорайонов; посёлок Нефтяников; Светоч</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3 class="mb-4 font-semibold text-gray-900">4. Сколько общеобразовательных школ работает в Светлогорске ?</h3>
+                <ul class="w-96 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200">
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q4-1" type="radio" value="" name="q4" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q4-1" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">В Светлогорске действует 14 общеобразовательных школ</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q4-2" type="radio" value="" name="q4" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q4-2" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">В г. Светлогорске работают 9 школ</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q4-3" type="radio" value="" name="q4" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q4-3" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">В городе работают 12 общеобразовательных школ</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3 class="mb-4 font-semibold text-gray-900">5.	Одни из крупнейших предприятий:</h3>
+                <ul class="w-96 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200">
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q5-1" type="checkbox" value="" name="q5" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q5-1" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">ОАО «СветлогорскХимволокно»</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q5-2" type="checkbox" value="" name="q5" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q5-2" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Светлогорский БМЗ</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q5-3" type="checkbox" value="" name="q5" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q5-3" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Светлогорский целлюлозно-картонный комбинат </label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q5-4" type="checkbox" value="" name="q5" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q5-4" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Завод сульфатной белёной целлюлозы </label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q5-5" type="checkbox" value="" name="q5" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q5-5" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Светлогорская ТЭЦ</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q5-6" type="checkbox" value="" name="q5" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q5-6" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">ОАО «СветлогорскМолоко»</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q5-7" type="checkbox" value="" name="q5" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q5-7" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Домостроительный комбинат</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q5-8" type="checkbox" value="" name="q5" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q5-8" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Светлогорский мясокомбинат</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q5-9" type="checkbox" value="" name="q5" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q5-9" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Светлогорский машиностроительный завод </label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3 class="mb-4 font-semibold text-gray-900">6.	Сколько бюстов воинов возведено на Аллее Героев Советского Союза ?</h3>
+                <ul class="w-96 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200">
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q6-1" type="radio" value="" name="q6" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q6-1" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">10 бюстов воинов-героев Советского Союза</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q6-2" type="radio" value="" name="q6" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q6-2" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">11 бюстов воинов</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q6-3" type="radio" value="" name="q6" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q6-3" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">9 бюстов воинов</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3 class="mb-4 font-semibold text-gray-900">7.	С какого года существует Крестовоздвиженский костел ?</h3>
+                <ul class="w-96 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200">
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q7-1" type="radio" value="" name="q7" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q7-1" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Костёл существовал с 1638 года</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q7-2" type="radio" value="" name="q7" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q7-2" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Первый костёл был построен в 1698 году</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q7-3" type="radio" value="" name="q7" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q7-3" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Костёл существовал с 1538 года</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q7-4" type="radio" value="" name="q7" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q7-4" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Костёл построили в 1409 году</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3 class="mb-4 font-semibold text-gray-900">8.	В каком году появилось Современное здание костёла Святого Креста ?</h3>
+                <ul class="w-96 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200">
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q8-1" type="radio" value="" name="q8" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q8-1" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Современное здание достроили к 1989 году</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q8-2" type="radio" value="" name="q8" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q8-2" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Новый костёл появился в 1997 году</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q8-3" type="radio" value="" name="q8" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q8-3" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Современный костёл Вознесения Святого Креста из красного кирпича появился в 1994</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3 class="mb-4 font-semibold text-gray-900">9.	На что направлена деятельность Дома ремёсел ?</h3>
+                <ul class="w-96 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200">
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q9-1" type="radio" value="" name="q9" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q9-1" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Деятельности Дома ремёсел направлена на вдохновение граждан города изучать историю  своего населённого пункта</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q9-2" type="radio" value="" name="q9" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q9-2" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Деятельности Дома ремёсел направлена на поддержку гос. мероприятий города</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q9-3" type="radio" value="" name="q9" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q9-3" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Деятельность Дома ремёсел направлена на возрождение, сохранение и поддержку традиций народных ремёсел</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3 class="mb-4 font-semibold text-gray-900">10. Чьё имя было присвоено картинной галереи «Традиция» ?</h3>
+                <ul class="w-96 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200">
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q10-1" type="radio" value="" name="q10" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q10-1" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Картинной галерее «Традиция» было присвоено имя народного художника Виктора Корнеплода</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q10-2" type="radio" value="" name="q10" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q10-2" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Картинной галерее «Традиция» было присвоено имя Германа Прянишникова</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q10-3" type="radio" value="" name="q10" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q10-3" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Картинной галерее «Традиция» было присвоено имя популярного белорусского скульптора Миско Ивана Якимовича</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3 class="mb-4 font-semibold text-gray-900">11. Сколько произведений искусства составляет фонд картинной галереи «Традиция» ?</h3>
+                <ul class="w-96 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200">
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q11-1" type="radio" value="" name="q11" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q11-1" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Фонд картинной галереи «Традиция» составляет больше 1000 предметов произведений искусства</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q11-2" type="radio" value="" name="q11" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q11-2" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">На сегодняшний момент фонд картинной галереи составляет около 200 экспонатов произведений искусства:  живопись, графика, скульптура</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q11-3" type="radio" value="" name="q11" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q11-3" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Сегодня основной фонд картинной галереи составляет свыше 600 предметов произведений искусства: живопись, графика, скульптура</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3 class="mb-4 font-semibold text-gray-900">12. Кто сделал скульптуру «Ника» ? В каком году ?</h3>
+                <ul class="w-96 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200">
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q12-1" type="radio" value="" name="q12" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q12-1" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Скульптура «Ника» Была сделана в 1984 году местным автором Виктором Смоляром</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q12-2" type="radio" value="" name="q12" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q12-2" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Скульптура была сделана местным автором Миско Иваном Якимовичем в 1984 году</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q12-3" type="radio" value="" name="q12" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q12-3" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">В 1984 году скульптор Колчев Евгений Алексеевич создал скульптуру «Ника»</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3 class="mb-4 font-semibold text-gray-900">13. Сколько воинов перезахоронено в памятник «Скорбящий колокол» ?</h3>
+                <ul class="w-96 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200">
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q13-1" type="radio" value="" name="q13" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q13-1" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Сюда перезахоронены 264 воинов, которые погибли в боях при освобождении д. Шатилки и территории района</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q13-2" type="radio" value="" name="q13" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q13-2" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Сюда перезахоронены 256 воинов</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q13-3" type="radio" value="" name="q13" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q13-3" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Сюда перезахоронены 265 воинов, которые погибли в боях при освобождении д. Шатилки и территории района от немецко-фашистских захватчиков</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3 class="mb-4 font-semibold text-gray-900">14. В каком году открыт Мемориальный комплекс «Багратион»</h3>
+                <ul class="w-96 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200">
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q14-1" type="radio" value="" name="q14" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q14-1" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Комплекс «Багратион» открыли в начале 2015 году</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q14-2" type="radio" value="" name="q14" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q14-2" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Монумент открыт в июне 2014 года</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q14-3" type="radio" value="" name="q14" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q14-3" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Мемориальный комплекс «Багратион» открыт в мае 2017 года</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3 class="mb-4 font-semibold text-gray-900">15. «Багратион» вошел в учебники как…</h3>
+                <ul class="w-96 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200">
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q15-1" type="radio" value="" name="q15" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q15-1" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">«Багратион» вошел в учебники как самая быстроя наступательная операция XX века</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q15-2" type="radio" value="" name="q15" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q15-2" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">«Багратион» вошел в учебники как самая успешная наступательная операция XX века</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q15-3" type="radio" value="" name="q15" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q15-3" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">«Багратион» вошел в учебники как самая средство затратная наступательная операция XX века</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3 class="mb-4 font-semibold text-gray-900">16. В каком году начато Строительство «Храма Преображения Господня» ?</h3>
+                <ul class="w-96 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200">
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q16-1" type="radio" value="" name="q16" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q16-1" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">В 1998 году начато строительство собора</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q16-2" type="radio" value="" name="q16" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q16-2" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">17 сентября 2006 года закончено строительство храма Преображения Господня</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q16-3" type="radio" value="" name="q16" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q16-3" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Строительство собора началось в 1989 году</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3 class="mb-4 font-semibold text-gray-900">17. Храм по высоте до основания креста…</h3>
+                <ul class="w-96 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200">
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q17-1" type="radio" value="" name="q17" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q17-1" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Храм по высоте до основания креста 35.55556м</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q17-2" type="radio" value="" name="q17" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q17-2" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Храм по высоте от основания до креста 33 м</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q17-3" type="radio" value="" name="q17" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q17-3" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Высота храма около 40м</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3 class="mb-4 font-semibold text-gray-900">18. Сколько жителей погибло в д. Ола ?</h3>
+                <ul class="w-96 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200">
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q18-1" type="radio" value="" name="q18" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q18-1" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Погибли 2109 мирных жителей</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q18-2" type="radio" value="" name="q18" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q18-2" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Погибли 1758 мирных жителей</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q18-3" type="radio" value="" name="q18" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q18-3" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Было убито порядка 1332 жителей деревни Ола</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3 class="mb-4 font-semibold text-gray-900">19. Сколько мирных жителей и советских воинов захоронено в братской могиле ?</h3>
+                <ul class="w-96 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200">
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q19-1" type="radio" value="" name="q19" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q19-1" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">2253 человека</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q19-2" type="radio" value="" name="q19" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q19-2" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">2783 человека</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q19-3" type="radio" value="" name="q19" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q19-3" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">1857 человек</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3 class="mb-4 font-semibold text-gray-900">20. В каком году на братской могиле был установлен памятник – скульптура коленопреклонённого солдата с венком ?</h3>
+                <ul class="w-96 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200">
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q20-1" type="radio" value="" name="q20" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q20-1" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">В 1948 году на братской могиле установили памятник - скульптура коленопреклоненного солдата с венком</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q20-2" type="radio" value="" name="q20" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q20-2" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">В 1958 году на братской могиле был установлен памятник - скульптура коленопреклоненного солдата с венком</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q20-3" type="radio" value="" name="q20" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q20-3" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Памятник был установлен в 1997 году</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3 class="mb-4 font-semibold text-gray-900">21. Как Светлогорцы называют памятник воинам-интернационалистам ?</h3>
+                <ul class="w-96 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200">
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q21-1" type="radio" value="" name="q21" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q21-1" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Памятник воинам-афганцам</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q21-2" type="radio" value="" name="q21" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q21-2" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Памятник воинам-интернационалистам</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q21-3" type="radio" value="" name="q21" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q21-3" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Памятник воинам-освободителям</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3 class="mb-4 font-semibold text-gray-900">22. В каком месте был установлен памятник основателю местечка Шатилки, Роману Шатиле ?</h3>
+                <ul class="w-96 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200">
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q22-1" type="radio" value="" name="q22" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q22-1" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Памятник был установлен на набережной города</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q22-2" type="radio" value="" name="q22" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q22-2" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Памятник установлен на аллее героев</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q22-3" type="radio" value="" name="q22" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q22-3" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Памятник установлен в центре города</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3 class="mb-4 font-semibold text-gray-900">23. В урочище "Николин Остров" находится единственная в Беларуси действующая…</h3>
+                <ul class="w-96 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200">
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q23-1" type="radio" value="" name="q23" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q23-1" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Ветряная мельница</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q23-2" type="radio" value="" name="q23" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q23-2" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Водяная мельница</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3 class="mb-4 font-semibold text-gray-900">24. К какому типу относиться ветряная мельница в урочище «Николин Остров» ?</h3>
+                <ul class="w-96 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200">
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q24-1" type="radio" value="" name="q24" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q24-1" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Мельница относиться к козловому типу</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q24-2" type="radio" value="" name="q24" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q24-2" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Мельница относиться к шатровому (голландскому) типу</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3 class="mb-4 font-semibold text-gray-900">25. Сколько лет отработал Тепловоз на предприятии ?</h3>
+                <ul class="w-96 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200">
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q25-1" type="radio" value="" name="q25" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q25-1" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Тепловоз отработал около 40 лет</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q25-2" type="radio" value="" name="q25" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q25-2" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Тепловоз отработал 27 лет</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q25-3" type="radio" value="" name="q25" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q25-3" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Тепловоз отработал 44 года</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3 class="mb-4 font-semibold text-gray-900">26. С какого года известен населённый пункт как имение Шатилинский Остров, в Великом княжестве Литовском ?</h3>
+                <ul class="w-96 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200">
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q26-1" type="radio" value="" name="q26" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q26-1" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Известен с 18 века</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q26-2" type="radio" value="" name="q26" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q26-2" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Известен с 30 февраля 1560 года</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q26-3" type="radio" value="" name="q26" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q26-3" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Известен с 15 июля 1560 года</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3 class="mb-4 font-semibold text-gray-900">27. В каком году рядом с Шатилками проведена железная дорога и образована станция ?</h3>
+                <ul class="w-96 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200">
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q27-1" type="radio" value="" name="q27" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q27-1" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Построена к 1989 году</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q27-2" type="radio" value="" name="q27" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q27-2" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">В 1915 году</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q27-3" type="radio" value="" name="q27" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q27-3" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">В 2001 году</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3 class="mb-4 font-semibold text-gray-900">28. В каких годах началось бурное развитие города  ?</h3>
+                <ul class="w-96 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200">
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q28-1" type="radio" value="" name="q28" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q28-1" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Бурное развитие началось в 1950 годах и продолжалось до 1970 года</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q28-2" type="radio" value="" name="q28" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q28-2" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Бурное развитие началось в 1960 годах и продолжалось до 1990 года</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q28-3" type="radio" value="" name="q28" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q28-3" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Бурное развитие началось в 1910 годах и продолжалось до 1950 года</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3 class="mb-4 font-semibold text-gray-900">29. В каком году посёлок Шатилки был преобразован в город Светлогорск ?</h3>
+                <ul class="w-96 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200">
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q29-1" type="radio" value="" name="q29" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q29-1" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">В 1969 году Шатилки были преобразованы в город Светлогорск</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q29-2" type="radio" value="" name="q29" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q29-2" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">Не знаю</label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-gray-200">
+                        <div class="flex items-center pl-3">
+                            <input id="q29-3" type="radio" value="" name="q29" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">
+                            <label for="q29-3" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">В 1961 году поселок Шатилки был преобразован в город Светлогорск</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
