@@ -1,0 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    /*Шапка*/
+    header.header {
+        @apply sticky top-0 py-0 mb border-b-2 border-gray-200 bg-white text-gray-700 z-50
+        dark:text-gray-500 dark:bg-slate-900 dark:border-slate-700
+        sm:py-1
+        md:py-2;
+    }
+
+    /*Боковая панель*/
+    aside.sidebar {
+        @apply w-full grid gap grid-cols-1 sm:grid-cols-2 md:grid-cols-1 md:flex-[0_0_18.75rem];
+    }
+
+    /*Кнопка с фоном*/
+    .btn-bg {
+        @apply px-3 py-1.5 font-medium text-xs rounded-lg text-gray-200 bg-gradient-to-br from-indigo-500 to-indigo-700
+        sm:px-4 sm:py-2 sm:text-sm
+        md:px-5 md:py-2.5
+        hover:from-indigo-700 hover:to-indigo-700;
+    }
+
+    /*Кнопка без фона*/
+    .btn-nobg {
+        @apply hover:bg-rose-300 dark:hover:bg-rose-300 rounded-lg p-2.5;
+    }
+
+    /*Текстовая ссылка*/
+    .link {
+        @apply hover:text-rose-700 dark:hover:text-rose-400;
+    }
+
+    /*Блочная ссылка*/
+    .block-link {
+        @apply hover:dark:bg-slate-800 hover:bg-gray-100;
+    }
+
+    /*Табы*/
+    .tabs {
+        @apply font-medium text-center text-gray-700 border-b border-gray-700
+        dark:text-gray-500 dark:border-gray-500;
+    }
+
+    .tabs ul {
+        @apply flex justify-between flex-wrap -mb-px text-xs gap
+        sm:text-sm;
+    }
+
+    .tabs li {
+        @apply flex-grow;
+    }
+
+    .tabs a {
+        @apply inline-block w-full py-4 rounded-t-lg border-b-2 border-transparent
+        hover:border-gray-900 hover:text-gray-900 dark:hover:border-gray-200 dark:hover:text-gray-200;
+    }
+
+    .tabs a.active {
+        @apply text-indigo-700 border-indigo-700
+        dark:text-indigo-400 dark:border-indigo-400;
+    }
+
+    /*Компонент-блок*/
+    .component-block {
+        @apply p rounded-lg bg-white
+        dark:bg-slate-900;
+    }
+
+    .component-block__title {
+        @apply text-gray-900 text-base font-semibold
+        md:text-lg
+        dark:text-gray-200;
+    }
+
+    .component-block__list {
+        @apply max-w-full divide-y divide-gray-200
+        dark:divide-gray-700;
+    }
+
+    /*Список новостей*/
+    .news-list {
+        @apply grid grid-cols-2 flex-wrap w-full gap
+        lg:grid-cols-3
+        md:grid-cols-2
+        sm:grid-cols-2;
+    }
+
+    .news-item {
+        @apply relative bg-transparent rounded-lg border border-gray-200 shadow-md
+        dark:border-gray-700;
+    }
+
+    .news-item__link {
+        @apply flex flex-col w-full;
+
+    }
+
+    .news-item__image {
+        @apply rounded-t-lg mb;
+    }
+
+    .news-item__title {
+        @apply px text-sm line-clamp-3 text-gray-900 font-medium
+        dark:text-gray-200
+        md:text-base;
+    }
+
+    .news-item__stats {
+        @apply p text-xs flex flex-row justify-between items-center text-gray-700
+        dark:text-gray-400;
+    }
+
+    .news-item__comments {
+        @apply flex flex-row items-center;
+    }
+
+    /*Матчи на главной странице*/
+    .main-matches__match {
+        @apply flex items-center justify-between py-2;
+    }
+
+    .main-matches__player {
+        @apply w-32 text-center;
+    }
+
+    /*Отступы*/
+    .m {
+        @apply m-2 sm:m-2.5 md:m-3 lg:m-4;
+    }
+
+    .mx {
+        @apply mx-2 sm:mx-2.5 md:mx-3 lg:mx-4;
+    }
+
+    .my {
+        @apply my-2 sm:my-2.5 md:my-3 lg:my-4;
+    }
+
+    .mr {
+        @apply mr-2 sm:mr-2.5 md:mr-3 lg:mr-4;
+    }
+
+    .ml {
+        @apply ml-2 sm:ml-2.5 md:ml-3 lg:ml-4;
+    }
+
+    .mb {
+        @apply mb-2 sm:mb-2.5 md:mb-3 lg:mb-4;
+    }
+
+    .mt {
+        @apply mt-2 sm:mt-2.5 md:mt-3 lg:mt-4;
+    }
+
+    .p {
+        @apply p-2 sm:p-2.5 md:p-3 lg:p-4;
+    }
+
+    .px {
+        @apply px-2 sm:px-2.5 md:px-3 lg:px-4;
+    }
+
+    .py {
+        @apply py-2 sm:py-2.5 md:py-3 lg:py-4;
+    }
+
+    .pr {
+        @apply pr-2 sm:pr-2.5 md:pr-3 lg:pr-4;
+    }
+
+    .pl {
+        @apply pl-2 sm:pl-2.5 md:pl-3 lg:pl-4;
+    }
+
+    .pb {
+        @apply pb-2 sm:pb-2.5 md:pb-3 lg:pb-4;
+    }
+
+    .pt {
+        @apply pt-2 sm:pt-2.5 md:pt-3 lg:pt-4;
+    }
+
+    .gap {
+        @apply gap-2 sm:gap-2.5 md:gap-3 lg:gap-4;
+    }
+}
