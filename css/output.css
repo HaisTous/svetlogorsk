@@ -1064,8 +1064,30 @@ aside.sidebar>nav>ul>li.sidebar-nav__active>a {
   height: auto;
 }
 
+.h-max {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
 .h-4 {
   height: 1rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.max-h-screen {
+  max-height: 100vh;
 }
 
 .w-5 {
@@ -1136,6 +1158,14 @@ aside.sidebar>nav>ul>li.sidebar-nav__active>a {
 
 .self-center {
   align-self: center;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
 }
 
 .rounded-lg {
