@@ -638,6 +638,16 @@ header.header {
   }
 }
 
+.active-link {
+  --tw-text-opacity: 1;
+  color: rgb(190 18 60 / var(--tw-text-opacity));
+}
+
+.dark .active-link {
+  --tw-text-opacity: 1;
+  color: rgb(251 113 133 / var(--tw-text-opacity));
+}
+
 /*Боковая панель*/
 
 aside.sidebar {
@@ -689,16 +699,16 @@ aside.sidebar>nav>ul>li>a {
 
 aside.sidebar>nav>ul>li>a:hover {
   --tw-border-opacity: 1;
-  border-color: rgb(244 63 94 / var(--tw-border-opacity));
+  border-color: rgb(190 18 60 / var(--tw-border-opacity));
   --tw-text-opacity: 1;
-  color: rgb(244 63 94 / var(--tw-text-opacity));
+  color: rgb(190 18 60 / var(--tw-text-opacity));
 }
 
 .dark aside.sidebar>nav>ul>li>a:hover {
   --tw-border-opacity: 1;
-  border-color: rgb(190 18 60 / var(--tw-border-opacity));
+  border-color: rgb(251 113 133 / var(--tw-border-opacity));
   --tw-text-opacity: 1;
-  color: rgb(190 18 60 / var(--tw-text-opacity));
+  color: rgb(251 113 133 / var(--tw-text-opacity));
 }
 
 aside.sidebar>nav>ul>li.sidebar-nav__active>a {
@@ -713,9 +723,9 @@ aside.sidebar>nav>ul>li.sidebar-nav__active>a {
 
 .dark aside.sidebar>nav>ul>li.sidebar-nav__active>a {
   --tw-border-opacity: 1;
-  border-color: rgb(244 63 94 / var(--tw-border-opacity));
+  border-color: rgb(251 113 133 / var(--tw-border-opacity));
   --tw-text-opacity: 1;
-  color: rgb(244 63 94 / var(--tw-text-opacity));
+  color: rgb(251 113 133 / var(--tw-text-opacity));
 }
 
 /*Кнопка с фоном*/
@@ -723,8 +733,8 @@ aside.sidebar>nav>ul>li.sidebar-nav__active>a {
 .btn-bg {
   border-radius: 0.5rem;
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
-  --tw-gradient-from: #f43f5e;
-  --tw-gradient-to: rgb(244 63 94 / 0);
+  --tw-gradient-from: #fb7185;
+  --tw-gradient-to: rgb(251 113 133 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
   --tw-gradient-to: #be123c;
   padding-left: 0.75rem;
@@ -1064,30 +1074,8 @@ aside.sidebar>nav>ul>li.sidebar-nav__active>a {
   height: auto;
 }
 
-.h-max {
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-}
-
 .h-4 {
   height: 1rem;
-}
-
-.h-10 {
-  height: 2.5rem;
-}
-
-.h-20 {
-  height: 5rem;
-}
-
-.h-screen {
-  height: 100vh;
-}
-
-.max-h-screen {
-  max-height: 100vh;
 }
 
 .w-5 {
@@ -1162,10 +1150,6 @@ aside.sidebar>nav>ul>li.sidebar-nav__active>a {
 
 .overflow-y-auto {
   overflow-y: auto;
-}
-
-.overflow-y-scroll {
-  overflow-y: scroll;
 }
 
 .rounded-lg {
