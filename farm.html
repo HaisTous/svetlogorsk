@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/output.css">
+  <script defer src="js/color-theme.js"></script>
+  <script defer src="js/nav.js"></script>
+  <title>Сельское хозяйство</title>
+</head>
+<body class="antialiased bg-gray-100 dark:bg-slate-800">
+<header class="header">
+  <div class="flex justify-between items-center flex-wrap mx-auto max-w-screen-xl">
+    <a href="index.html" class="flex items-center ml">
+      <img src="img/logo.webp" class="mr-3 h-6 sm:h-9" alt="ChessCake Logo">
+      <h1 class="self-center text-gray-700 dark:text-gray-200 text-sm font-semibold sm:text-base md:text-xl link">
+        Светлогорск
+      </h1>
+    </a>
+    <nav class="hidden sm:flex">
+      <ul class="flex flex-row font-medium sm:space-x-8 text-sm md:text-base">
+        <li>
+          <a href="history.html" class="link">История</a>
+        </li>
+        <li>
+          <a href="people.html" class="link">Люди</a>
+        </li>
+        <li>
+          <a href="industry.html" class="link">Предприятия</a>
+        </li>
+        <li>
+          <a href="farm.html" aria-current="page" class="link active-link">Сельское хозяйство</a>
+        </li>
+        <li>
+          <a href="attractions.html" class="link">Достопримечательности</a>
+        </li>
+        <li>
+          <a href="test.html" class="link">Викторина</a>
+        </li>
+      </ul>
+    </nav>
+    <button id="theme-toggle" type="button" class="btn-nobg">
+      <svg
+              aria-hidden="true"
+              id="theme-toggle-dark-icon"
+              class="w-5 h-5 hidden"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+      </svg>
+      <svg
+              aria-hidden="true"
+              id="theme-toggle-light-icon"
+              class="w-5 h-5 hidden"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+        <path
+                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464
+            4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0
+            010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1
+            1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465
+            5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1
+            1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                fill-rule="evenodd"
+                clip-rule="evenodd">
+        </path>
+      </svg>
+    </button>
+  </div>
+  <ul class="flex flex-row justify-center font-medium space-x-5 text-sm sm:hidden p overflow-x-auto">
+    <li>
+      <a href="history.html" class="link">История</a>
+    </li>
+    <li>
+      <a href="people.html" class="link">Люди</a>
+    </li>
+    <li>
+      <a href="industry.html" class="link">Предприятия</a>
+    </li>
+    <li>
+      <a href="farm.html" aria-current="page" class="link active-link">Сельское хозяйство</a>
+    </li>
+    <li>
+      <a href="attractions.html" class="link">Достопримечательности</a>
+    </li>
+    <li>
+      <a href="test.html" class="link">Викторина</a>
+    </li>
+  </ul>
+</header>
+<div class="flex flex-col md:flex-row items-start mx-auto max-w-screen-xl gap px">
+  <main class="w-full component-block">
+    <h2 data-section="information"
+        class="-mt-14 component-block__title mb section"
+        id="information">
+      Сельское хозяйство
+    </h2>
+    <figure class="max-w-lg mx-auto my">
+      <img class="max-w-full mx-auto mx-auto h-auto rounded-lg" src="#" alt="">
+      <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400"></figcaption>
+    </figure>
+    <p class="mb">В Светлогорском районе функционирует 12 сельскохозяйственных предприятий:</p>
+    <ul class="space-y-1 list-disc list-inside">
+      <li>6 коммунальных сельскохозяйственных унитарных предприятий</li>
+      <li>4 предприятия других форм собственности</li>
+      <li>1 подсобное  хозяйство  промышленного  предприятия</li>
+      <li>Светлогорский цех ОАО «Птицефабрика «Рассвет»»</li>
+      <li>15 фермерских хозяйств</li>
+    </ul>
+    <p class="mt">Площадь сельхозугодий составляет 58,0 тысячи гектар, в том числе пашни 29,4 тысячи гектар. В сельскохозяйственных организациях Светлогорского района имеется 40 животноводческих ферм из них 24 молочно–товарные, 1 свиноводческий комплекс, 1 комплекс по выращиванию молодняка крупного рогатого скота.</p>
+    <br>
+    <p class="mb">Светлогорский район имеет молочно-мясное направление с развитым производством зерна, картофеля, фруктов, овощей, кормов.</p>
+    <p class="mb">Структурными подразделениями являются:</p>
+    <ul class="space-y-1 list-disc list-inside">
+      <li>Цех растениеводства, в котором функционируют один механизированный отряд и полеводческая бригада;</li>
+      <li>Цех животноводства, включающий две молочно-товарные фермы и три фермы по выращиванию молодняка КРС;</li>
+      <li>Ремонтно-механические мастерские;</li>
+      <li>Строительная бригада и автопарк.</li>
+    </ul>
+  </main>
+  <aside class="sidebar component-block sticky top-[4.5rem]">
+    <h3 class="text-sm font-semibold tracking-wide text-gray-900 uppercase dark:text-white lg:text-xs">
+      На этой странице
+    </h3>
+    <nav class="sidebar-nav">
+      <ul>
+        <li data-section="" class="sidebar-nav__li sidebar-nav__active">
+          <a href="#">1</a>
+        </li>
+        <li data-section="" class="sidebar-nav__li">
+          <a href="#">2</a>
+        </li>
+        <li data-section="" class="sidebar-nav__li">
+          <a href="#">3</a>
+        </li>
+        <li data-section="" class="sidebar-nav__li">
+          <a href="#">4</a>
+        </li>
+        <li data-section="" class="sidebar-nav__li">
+          <a href="#">5</a>
+        </li>
+        <li data-section="" class="sidebar-nav__li">
+          <a href="#">6</a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+</div>
+</body>
+</html>
